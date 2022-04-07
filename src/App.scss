@@ -1,0 +1,25 @@
+@import "./src/SassVariables/SassVariables.scss";
+
+.App {
+  min-height: 100vh;
+  overflow: hidden;
+
+  .overlay {
+    background-color: lightgray;
+    height: 100%;
+    left: 0;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    img {
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      opacity: 0.8;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
