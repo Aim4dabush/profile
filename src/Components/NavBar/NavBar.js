@@ -26,7 +26,7 @@ function NavBar() {
   };
 
   const openHandler = {
-    display: !open ? "block" : "none",
+    display: open ? "none" : "inline-block",
   };
 
   return (
@@ -133,7 +133,7 @@ function NavBar() {
 
           <div className="mobile">
             <a
-              href="/"
+              href="#"
               type="button"
               className="hamburger"
               onClick={toggleHandler}
