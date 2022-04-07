@@ -113,6 +113,7 @@
           flex-direction: column;
 
           .hamburger {
+            background-color: rgba(0, 0, 0, 0);
             border: 3px solid $primaryColor;
             border-radius: 10px;
             color: $primaryColor;

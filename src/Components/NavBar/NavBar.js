@@ -132,14 +132,9 @@ function NavBar() {
           </div>
 
           <div className="mobile">
-            <a
-              href="#"
-              type="button"
-              className="hamburger"
-              onClick={toggleHandler}
-            >
+            <button type="button" className="hamburger" onClick={toggleHandler}>
               <FontAwesomeIcon icon={faBars} />
-            </a>
+            </button>
             <ul style={openHandler}>
               <li>
                 <NavLink
