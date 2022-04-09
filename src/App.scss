@@ -2,10 +2,10 @@
 
 .App {
   min-height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 
   .overlay {
-    background-color: lightgray;
+    background-color: dimgrey;
     height: 100%;
     left: 0;
     mix-blend-mode: overlay;

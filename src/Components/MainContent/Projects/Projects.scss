@@ -1,1 +1,57 @@
 @import "./src/SassVariables/SassVariables.scss";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  position: relative;
+  width: 100vw;
+
+  .project-carousel-container {
+    align-items: center;
+    background-color: rgb(105, 105, 105, 0.5);
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    .arrows {
+      color: $primaryColor;
+      font-size: 35px;
+
+      &:hover {
+        color: $secondaryColor;
+        cursor: pointer;
+      }
+    }
+
+    .image-carousel {
+      display: flex;
+      gap: 3em;
+      justify-content: center;
+      margin-top: 1em;
+      width: 100%;
+
+      a {
+        align-items: center;
+        color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        opacity: 0.5;
+        text-decoration: none;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        img {
+          height: 80px;
+          width: 80px;
+        }
+      }
+      .selected {
+        opacity: 1;
+      }
+    }
+  }
+}

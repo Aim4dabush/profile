@@ -1,0 +1,65 @@
+@import "./src/SassVariables/SassVariables.scss";
+
+.project-display {
+  align-items: center;
+  display: flex;
+  height: 678px;
+  width: 100vw;
+
+  .project-display-container {
+    display: flex;
+    width: 100vw;
+    iframe {
+      border: none;
+      height: 650px;
+      margin-left: 1em;
+      width: 45%;
+    }
+
+    .info {
+      align-items: center;
+      color: $primaryColor;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      width: 55%;
+
+      .icon {
+        display: flex;
+        font-size: 40px;
+        gap: 1em;
+        margin-top: 1em;
+      }
+
+      .other-links {
+        margin-top: 1em;
+
+        ul {
+          display: flex;
+          gap: 3em;
+          list-style: none;
+
+          li {
+            a {
+              align-items: center;
+              color: $primaryColor;
+              display: flex;
+              font-size: 25px;
+              gap: 0.5em;
+              text-decoration: none;
+
+              &:hover {
+                color: $secondaryColor;
+              }
+            }
+          }
+        }
+      }
+
+      p {
+        padding: 0 5em;
+        text-align: center;
+      }
+    }
+  }
+}

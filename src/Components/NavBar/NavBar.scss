@@ -81,7 +81,7 @@
                 color: $secondaryColor;
               }
             }
-            .active {
+            .selected {
               border-color: $secondaryColor;
               color: $secondaryColor;
             }
@@ -149,7 +149,7 @@
                 }
               }
 
-              .active {
+              .selected {
                 border-color: $secondaryColor;
                 color: $secondaryColor;
               }
