@@ -141,7 +141,7 @@ function NavBar() {
                   exact={true}
                   to="/"
                   className="links"
-                  activeClassName="active"
+                  activeClassName="selected"
                 >
                   Home
                 </NavLink>
@@ -150,7 +150,7 @@ function NavBar() {
                 <NavLink
                   to="/about-me"
                   className="links"
-                  activeClassName="active"
+                  activeClassName="selected"
                 >
                   About Me
                 </NavLink>
@@ -159,7 +159,7 @@ function NavBar() {
                 <NavLink
                   to="/projects"
                   className="links"
-                  activeClassName="active"
+                  activeClassName="selected"
                 >
                   Projects
                 </NavLink>
@@ -168,7 +168,7 @@ function NavBar() {
                 <NavLink
                   to="/resume"
                   className="links"
-                  activeClassName="active"
+                  activeClassName="selected"
                 >
                   Resume
                 </NavLink>
@@ -177,7 +177,7 @@ function NavBar() {
                 <NavLink
                   to="/contact"
                   className="links"
-                  activeClassName="active"
+                  activeClassName="selected"
                 >
                   Contact
                 </NavLink>

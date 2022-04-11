@@ -1,1 +1,56 @@
 @import "./src/SassVariables/SassVariables.scss";
+
+.home {
+  height: calc(100vh - 100px);
+  position: relative;
+
+  .home-container {
+    align-items: center;
+    color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-shadow: 2px 2px $secondaryColor;
+
+    h1 {
+      span {
+        color: $highlightedColor;
+        text-shadow: 1px 1px $primaryColor;
+      }
+    }
+
+    h2 {
+      margin-top: 3em;
+
+      a {
+        color: $highlightedColor;
+        text-decoration: none;
+        text-shadow: 1px 1px $primaryColor;
+
+        &:hover {
+          color: $secondaryColor;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    img {
+      border-radius: 10px;
+      margin-top: 3em;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    .home-container {
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

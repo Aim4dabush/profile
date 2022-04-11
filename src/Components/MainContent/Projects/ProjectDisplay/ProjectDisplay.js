@@ -1,6 +1,6 @@
 import React from "react";
 
-//routes
+//router
 import { useParams } from "react-router-dom";
 
 //style

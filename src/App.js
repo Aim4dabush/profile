@@ -1,10 +1,10 @@
-//Styles
+//styles
 import "./App.scss";
 
-//Routes
+//router
 import routes from "./Routes/routes";
 
-//Components
+//components
 import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
