@@ -34,7 +34,7 @@ const projects = [
         icon: faBootstrap,
       },
     ],
-    mobile: "Any Width",
+    mobile: "Mobile: Any Width",
   },
   {
     id: "single-price-grid",
@@ -58,7 +58,7 @@ const projects = [
         icon: faBootstrap,
       },
     ],
-    mobile: "None",
+    mobile: "Mobile: None",
   },
   {
     id: "first-presentation-landing-page",
@@ -83,7 +83,7 @@ const projects = [
         icon: faReact,
       },
     ],
-    mobile: "None",
+    mobile: "Mobile: None",
   },
   {
     id: "intro-sign-up-form",
@@ -111,7 +111,7 @@ const projects = [
         icon: faReact,
       },
     ],
-    mobile: "Max-Width 914px",
+    mobile: "Mobile: Max-Width 914px",
   },
   {
     id: "pricing-component-toggle-master",
@@ -143,7 +143,7 @@ const projects = [
         icon: faSass,
       },
     ],
-    mobile: "Max-Width 375px",
+    mobile: "Mobile: Max-Width 375px",
   },
 ];
 

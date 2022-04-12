@@ -57,7 +57,7 @@ function ProjectDisplay({ projects }) {
             ) : null}
           </div>
           <div className="checks">
-            <h3>Mobile: {index?.mobile}</h3>
+            <h3>{index?.mobile}</h3>
           </div>
         </div>
       </div>

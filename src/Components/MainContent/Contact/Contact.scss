@@ -1,1 +1,123 @@
 @import "./src/SassVariables/SassVariables.scss";
+
+.contact {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+
+  .contact-container {
+    border: 5px solid $secondaryColor;
+    border-radius: 10px;
+    min-width: 500px;
+    padding: 1em;
+    position: relative;
+
+    .line-one {
+      display: flex;
+
+      input {
+        width: 500px;
+        margin: 0.5em;
+      }
+    }
+
+    .line-two {
+      display: flex;
+
+      input {
+        width: 500px;
+        margin: 0.5em;
+      }
+    }
+
+    .form-control {
+      align-items: center;
+      color: $primaryColor;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+
+      input {
+        border: none;
+        border-radius: 10px;
+        padding: 1em 0;
+        margin-bottom: 1em;
+        width: 500px;
+      }
+
+      textarea {
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        width: 500px;
+      }
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          $primaryColor,
+          $secondaryColor
+        );
+        border: none;
+        border-radius: 10px;
+        color: $primaryColor;
+        font-size: 15px;
+        padding: 0.5em 3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .contact {
+    .contact-container {
+      max-width: 500px;
+
+      .line-one {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .line-two {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .contact {
+    .contact-container {
+      min-width: 350px;
+
+      .line-one {
+        input {
+          width: 350px;
+        }
+      }
+
+      .line-two {
+        input {
+          width: 350px;
+        }
+      }
+
+      .form-control {
+        input {
+          width: 350px;
+        }
+
+        textarea {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
