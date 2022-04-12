@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-//Routes
+//routes
 import { NavLink } from "react-router-dom";
 
-//Styles
+//styles
 import "./NavBar.scss";
 
-//Fontawesome
+//fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,

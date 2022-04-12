@@ -1,6 +1,6 @@
 import React from "react";
 
-//Styles
+//styles
 import "./MainContent.scss";
 
 function MainContent() {

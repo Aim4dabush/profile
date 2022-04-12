@@ -9,8 +9,10 @@
   .project-display-container {
     display: flex;
     width: 100vw;
+
     iframe {
       border: none;
+      border-radius: 10px;
       height: 650px;
       margin-left: 1em;
       width: 45%;
@@ -25,10 +27,16 @@
       width: 55%;
 
       .icon {
+        color: $iconColor;
         display: flex;
         font-size: 40px;
         gap: 1em;
         margin-top: 1em;
+      }
+
+      h2 {
+        color: $titleColor;
+        text-shadow: 1px 1px $primaryColor;
       }
 
       .other-links {
@@ -42,14 +50,17 @@
           li {
             a {
               align-items: center;
-              color: $primaryColor;
+              color: $highlightedColor;
               display: flex;
               font-size: 25px;
               gap: 0.5em;
               text-decoration: none;
+              text-shadow: 1px 1px $primaryColor;
 
               &:hover {
                 color: $secondaryColor;
+                text-decoration: underline;
+                text-shadow: 1px 1px $primaryColor;
               }
             }
           }

@@ -1,12 +1,12 @@
 import React from "react";
 
-//router
+//routes
 import { useParams } from "react-router-dom";
 
 //style
 import "./ProjectDisplay.scss";
 
-//font awesome
+//fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -23,36 +23,41 @@ function ProjectDisplay({ projects }) {
     <div className="project-display">
       <div className="project-display-container">
         <iframe
-          src={index.siteLink}
-          name={index.title}
-          title={index.title}
+          src={index?.siteLink}
+          name={index?.title}
+          title={index?.title}
         ></iframe>
         <div className="info">
-          <h2>{index.title}</h2>
-          <p>{index.description}</p>
+          <h2>{index?.title}</h2>
+          <p>{index?.description}</p>
           <div className="icon">
-            {index.languages.map((language) => {
+            {index?.languages.map((language) => {
               return (
-                <div key={language.id}>
-                  <FontAwesomeIcon icon={language.icon} />
+                <div key={language?.id}>
+                  <FontAwesomeIcon icon={language?.icon} />
                 </div>
               );
             })}
           </div>
           <div className="other-links">
-            <ul>
-              <li>
-                <a href={index.gitHub} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={faGithub} />
-                  Repository
-                </a>
-              </li>
-              <li>
-                <a href={index.siteLink} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={faGlobe} /> Deployed Site
-                </a>
-              </li>
-            </ul>
+            {index ? (
+              <ul>
+                <li>
+                  <a href={index?.gitHub} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                    Repository
+                  </a>
+                </li>
+                <li>
+                  <a href={index?.siteLink} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGlobe} /> Deployed Site
+                  </a>
+                </li>
+              </ul>
+            ) : null}
+          </div>
+          <div className="checks">
+            <h3>Mobile: {index?.mobile}</h3>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 //styles
 import "./App.scss";
 
-//router
+//routes
 import routes from "./Routes/routes";
 
 //components

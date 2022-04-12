@@ -1,12 +1,12 @@
 import React from "react";
 
-//router
+//routes
 import { NavLink } from "react-router-dom";
 
-//Styles
+//styles
 import "./Projects.scss";
 
-//font-awesome
+//fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleChevronLeft,

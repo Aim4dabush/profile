@@ -1,1 +1,67 @@
 @import "./src/SassVariables/SassVariables.scss";
+
+.about-me {
+  display: flex;
+  height: calc(100vh - 130px);
+  width: 100vw;
+
+  .bio-container {
+    color: $primaryColor;
+    padding: 1em;
+    text-align: center;
+    text-shadow: 1px 1px $secondaryColor;
+    width: 50%;
+
+    h1 {
+      color: $highlightedColor;
+      text-shadow: 1px 1px $primaryColor;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      span {
+        color: $highlightedColor;
+        text-shadow: 1px 1px $primaryColor;
+      }
+    }
+
+    p {
+      color: $highlightedColor;
+      margin: 0;
+      text-shadow: 1px 1px $primaryColor;
+    }
+  }
+
+  .skills-container {
+    align-items: center;
+    display: flex;
+    color: $iconColor;
+    font-size: 30px;
+    justify-content: center;
+    margin: 1em;
+    text-shadow: 1px 1px $primaryColor;
+    width: 50%;
+
+    .left {
+      .skill-icon {
+        margin-bottom: 3em;
+      }
+    }
+
+    .middle {
+      margin-left: 3em;
+
+      .skill-icon {
+        margin-bottom: 3em;
+      }
+    }
+
+    .right {
+      margin-left: 3em;
+
+      .skill-icon {
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
