@@ -6,6 +6,7 @@ import "./AboutMe.scss";
 //fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faAngular,
   faBootstrap,
   faCss3Alt,
   faGitAlt,
@@ -42,16 +43,19 @@ function AboutMe() {
       <div className="skills-container">
         <div className="left">
           <div className="skill-icon">
+            <FontAwesomeIcon icon={faAngular} /> Angular
+          </div>
+          <div className="skill-icon">
             <FontAwesomeIcon icon={faBootstrap} /> Bootstrap
           </div>
           <div className="skill-icon">
             <FontAwesomeIcon icon={faCss3Alt} /> CSS 3
           </div>
+        </div>
+        <div className="middle">
           <div className="skill-icon">
             <FontAwesomeIcon icon={faGitAlt} /> Git
           </div>
-        </div>
-        <div className="middle">
           <div className="skill-icon">
             <FontAwesomeIcon icon={faGithub} /> Git Hub
           </div>

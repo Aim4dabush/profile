@@ -2,11 +2,11 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 //components
-import AboutMe from "../Components/MainContent/AboutMe/AboutMe";
-import Contact from "../Components/MainContent/Contact/Contact";
-import Home from "../Components/MainContent/Home/Home";
-import Projects from "../Components/MainContent/Projects/Projects";
-import Resume from "../Components/MainContent/Resume/Resume";
+import AboutMe from "../Components/AboutMe/AboutMe";
+import Contact from "../Components/Contact/Contact";
+import Home from "../Components/Home/Home";
+import Projects from "../Components/Projects/Projects";
+import Resume from "../Components/Resume/Resume";
 
 export default (
   <Switch>

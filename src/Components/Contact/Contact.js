@@ -3,6 +3,9 @@ import React, { useState } from "react";
 //styles
 import "./Contact.scss";
 
+//form validation
+import validation from "./Validation/Validation";
+
 function Contact() {
   const [form, setForm] = useState({
     firstName: "",
@@ -13,12 +16,22 @@ function Contact() {
     message: "",
   });
 
+  const [valid, setValid] = useState({
+    fNameValid: true,
+    lNameValid: true,
+    companyValid: true,
+    contactValid: true,
+    emailValid: true,
+    messageValid: true,
+  });
+
   const onChangeHandler = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    // validation(form, setValid);
     console.log(form);
   };
 
@@ -84,7 +97,7 @@ function Contact() {
             <label for="message">Message</label>
             <textarea
               rows="10"
-              cols={10}
+              cols="10"
               name="message"
               id="message"
               value={form.message}

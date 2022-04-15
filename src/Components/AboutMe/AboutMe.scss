@@ -1,6 +1,7 @@
 @import "./src/SassVariables/SassVariables.scss";
 
 .about-me {
+  align-items: center;
   display: flex;
   height: calc(100vh - 130px);
   width: 100vw;
@@ -13,20 +14,20 @@
     width: 50%;
 
     h1 {
-      color: $highlightedColor;
+      color: $secondaryColor;
       text-shadow: 1px 1px $primaryColor;
       margin-bottom: 0;
     }
 
     h2 {
       span {
-        color: $highlightedColor;
+        color: $secondaryColor;
         text-shadow: 1px 1px $primaryColor;
       }
     }
 
     p {
-      color: $highlightedColor;
+      color: $secondaryColor;
       margin: 0;
       text-shadow: 1px 1px $primaryColor;
     }
